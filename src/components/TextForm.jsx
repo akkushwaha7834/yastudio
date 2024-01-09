@@ -21,7 +21,7 @@ export default function TextForm(props) {
     <>
         <div className='container'>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-8">
                     <h3>{props.heading}</h3>
                     <div className="mb-3">
                         <textarea className="form-control" id="myBox" onChange={handleOnChnage} placeholder={text} value={text} rows="10"></textarea>
@@ -32,9 +32,7 @@ export default function TextForm(props) {
                     <button className="btn btn-primary mx-2" onClick={handleLowerClick}>
                         Convert to Lower Case
                     </button>
-                </div>
-                <div className="col-md-6">
-                    <h2 className="summary">
+                    <h2 className="summary my-3">
                         Text Summary
                     </h2>
                     <p>
